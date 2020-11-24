@@ -1,0 +1,30 @@
+{
+  "name": "ipcamlapse",
+  "version": "1.0.0",
+  "description": "Ip camera tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyme-xd/IPCamLapse.git"
+  },
+  "keywords": [
+    "ip_cam",
+    "camera",
+    "ip",
+    "async"
+  ],
+  "author": "zyrn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyme-xd/IPCamLapse/issues"
+  },
+  "homepage": "https://github.com/zyme-xd/IPCamLapse#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "readline-promise": "^1.0.4"
+  },
+  "devDependencies": {}
+}
