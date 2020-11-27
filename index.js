@@ -1,10 +1,7 @@
 const fs = require('fs')
 const fetch = require('node-fetch');
 let camList = require('./config.json') // example listed in config.json
-const readline = require('readline-promise').default.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+
 fs.watchFile('config.json', () => {
     camList = JSON.parse(fs.readFileSync('./config.json').toString())
     console.log('reloaded')
@@ -33,7 +30,5 @@ async function saveImage() {
         catch (error) {console.log(error)}
     }
 }
-
-
 
 setInterval(saveImage, 1800000)
